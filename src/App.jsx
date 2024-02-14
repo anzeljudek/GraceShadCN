@@ -15,10 +15,10 @@ export default function App() {
     <div className="container">
       <Tabs defaultValue="account">
         <TabsList>
-          <TabsTrigger value="account">Živali</TabsTrigger>
-          <TabsTrigger value="password">Sadje</TabsTrigger>
+          <TabsTrigger value="zivali">Živali</TabsTrigger>
+          <TabsTrigger value="sadje">Sadje</TabsTrigger>
         </TabsList>
-        <TabsContent value="account">
+        <TabsContent value="zivali">
           <div className="grid grid-cols-3">
             <Card>
               <CardHeader>
@@ -45,7 +45,7 @@ export default function App() {
             </Card>
           </div>
         </TabsContent>
-        <TabsContent>
+        <TabsContent value="sadje">
           <Card>
             <CardHeader>
               <CardTitle>Ananas</CardTitle>
